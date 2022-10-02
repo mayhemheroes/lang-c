@@ -1,0 +1,6 @@
+project: lang-c
+target: langc-fuzz
+
+cmds:
+    - cmd: ./langc-fuzz
+      libfuzzer: true
