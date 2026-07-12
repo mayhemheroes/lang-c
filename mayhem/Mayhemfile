@@ -1,0 +1,10 @@
+project: lang-c
+target: langc-fuzz
+
+cmds:
+  - cmd: /mayhem/langc-fuzz
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/langc-fuzz/testsuite
